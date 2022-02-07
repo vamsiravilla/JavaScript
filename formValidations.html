@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Registration Form -->
+
+    <form onsubmit="">
+        <div class="col-sm-10">
+          <label for="full_name">Full Name</label>
+          <input type="text" class="form-control" id="full_name" placeholder="Enter Full Name" required>
+          <span id="fspa"></span>
+        </div>
+   <br>
+        <div class="col-sm-10">
+            <label for="user_name">User Name</label>
+            <input type="text" class="form-control" id="user_name" placeholder="Enter Username" required>
+            <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+          </div>
+      <br>
+          <div class="col-sm-10">
+            <label for="e_mail">Email address</label>
+            <input type="email" class="form-control" id="e_mail" placeholder="Enter email" required>
+          </div>
+          <br>
+        <div class="col-sm-10">
+          <label for="Password1">Password</label>
+          <input type="password" class="form-control" id="Password1" placeholder="Password" required>
+        </div>
+        <br>
+        <div class="col-sm-10">
+            <label for="Password2">Confirm Password</label>
+            <input type="password" class="form-control" id="Password2" placeholder="Confirm Password" required>
+          </div>
+          <br>
+        <div class="form-group form-check">
+            <div class="col-sm-10">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+          <label class="form-check-label" for="exampleCheck1">I have read and agree to the Terms</label>
+        </div>
+    <br>
+        <button type="submit" class="btn btn-primary">Register</button>
+        <button type="Reset" value="reset" class="btn btn-primary">Reset</button>
+    </div>
+      </form>
+
+      <script>
+        function validateForm(val) {
+        var fname = document.getElementById("full_name").value  
+        if (fname =="")
+        {
+            document.getElementById("fspa").innerHTML = 'Please Fill'
+        }
+        }
+      </script>
+</body>
+</html>

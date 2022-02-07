@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Page Title</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="">
+<style>
+</style>
+<script src=""></script>
+<body>
+    <script>
+        var a=10;
+        document.write(typeof a+"<br>");
+        a="Prasad";
+        document.write(typeof a+"<br>");
+        a=true;
+        document.write(typeof a+"<br>");
+        a=10.88;
+        document.write(typeof a+"<br>");
+        var b;
+        document.write(typeof b+"<br>");
+
+        document.write(10+10);
+        document.write(10+" Prasad <br>");
+        document.write(10+" Prasad"+10+"<br>");
+        document.write(10+20+" Prasad <br>");
+
+
+
+        var en=null;
+        document.write(en +"<br>");
+        document.write(typeof en);
+        document.write("<br>------------------------let keyword------------------------------------<br>");
+
+        // let sno=100;
+        // document.write(sno+"<br>");
+        // let sno='prasad';            This will give an ERROR
+        // document.write(sno);
+
+        // var name="Prasad";           This will give an ERROR
+        // let name=10;
+        // document.write(name);
+
+
+           var fno=10;
+           {
+                fno="prasad";
+                document.write(fno+"<br>");
+                document.write(10+ +"10 <br>");
+
+                document.write("10"== 10);
+                document.write("<br>");
+
+                document.write("10"==="10 <br>");
+                document.write(undefined + undefined+"<br>");
+                document.write(undefined +"prasad");
+              //  document.write(symbol(100));
+
+           } 
+
+
+           document.write("<br>");
+           var tbl_name = "employee";
+           var sal = 50000;
+           var sql_query = `select * from ${tbl_name} where esal > ${sal}`;
+           document.write(sql_query + "<br>");
+           document.write(10%2 +"<br>");
+           document.write(0.0/1 +"<br>");   // output: 0
+           document.write(0.0/0 +"<br>");   //output: NaN
+           document.write(true<true +"<br>");
+           document.write(true>false +"<br>");
+
+
+
+        
+    </script>
+
+
+
+</body>
+</html>

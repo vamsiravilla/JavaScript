@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let x = 5;
+        let y = 6;
+        x,y = y,x;
+        document.write(`x = ${x} , y = ${y}`,'<br>');
+        let a = 5;
+        let b = 6;
+        let c = 7;
+        [a, b, c] = [c ,a , b];
+        document.write(`a = ${a} , b = ${b}, c = ${c}`,'<br>');
+        let l = 5;
+        let m = 6;
+        let n = 7;
+        let o = 8;
+        [l, n, m ,o] = [m ,n , o, l];
+        document.write(`l = ${l} , m = ${m}, n = ${n}, o = ${o}`,'<br>');
+        var d = 1,e = 2;
+        tmp = d;
+        d = e;
+        e = tmp;
+        document.write(`d = ${d} , e = ${e}`,'<br>');
+        var f = 1,g = 2,h = 3;
+        tmp = h;
+        f = g;
+        h = f;
+        g = tmp;
+        document.write(`f = ${f} , g = ${g}, h = ${h}`,'<br>');
+        var i = 1,j = 2,k = 3,p = 4;
+        tmp = i;
+        i = j;
+        j = k;
+        k = p;
+        p = tmp;
+        document.write(`i = ${i} , j = ${j}, k = ${k},p = ${p}`,'<br>');
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+# check the even number and odd number
+ --------------------------------------    
+ <script>
+
+   let number = prompt('enter a number :')
+
+   if (number%2==0)
+   {
+    document.write('even')
+
+   }
+
+   else
+  {
+   document.write('odd')
+  }
+</script>
+
+# find Factorials 
+ ---------------
+
+ <script>
+
+let number = prompt('Enter any number :')
+
+let fact = 1
+for (i=1;i<=number;i++)
+{
+fact*=i
+}
+{
+
+document.write(fact)
+
+}
+</script>

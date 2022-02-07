@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Operators</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="">
+<style>
+</style>
+<script>
+    function sayHi(){
+        // alert('Come on Time')
+        //  confirm('Have to come regularly')
+         prompt("Enter UserName")
+    }
+</script>
+<body>
+    <script>
+        var a=10;
+        y=a++;
+        document.write(y +"<br>");
+        var a=10;
+        y=++a;
+        document.write(y +"<br>");
+        var a=10;
+        a+=10
+        document.write(a +"<br>");
+        x=10
+        x ? document.write('Even') : document.write('odd');
+         document.write("<br> -----------------------------Functions----------------- <br>")
+
+        function add()
+        {
+            document.write(100+200 +"<br>");
+
+        }
+        add();
+
+        function addfun( fno, sno )
+        {
+            result = fno+sno
+            document.write(result +"<br>");
+        }
+        addfun(100,2000);
+
+        function funreturn( fno, sno )
+        {
+            result = fno + sno
+            return result
+        }
+        document.write(funreturn("hello","Prasad <br>"))
+
+        function newfun( fno, sno )
+        {
+            result = fno + sno
+            return result
+        }
+        res = newfun(1000,2000)
+        document.write(res);
+
+        function funName( fno, sno )
+        {
+            result = fno + sno
+            return result
+        }
+        funName();   //  if we dont give anything in function calling it will return undefined.
+        
+        let anotherfun = ( fno, sno )=>
+        {
+            result = fno + sno
+            return result
+        }
+
+        pr = anotherfun(10,20)
+        document.write("<br>"+ pr);
+        document.write("<br>" + anotherfun);
+        document.write("<br>" + anotherfun('hello ','pasad'));
+       
+
+        let anonymousfun = ( fno, sno )=>
+        {
+           
+            return fno + sno
+        }
+
+        document.write("<br>"+ anonymousfun(10,200))
+
+        let prasadfun = (...arg1)=>
+        {
+           
+            document.write("<br>" +arg1)
+        }
+
+        prasadfun('hello');
+        prasadfun('hello','prasad');
+        prasadfun('hello','prasad',10);
+
+
+        let fundefaultarg = (arg1='Hello',arg2='prasad',arg3='502')=>
+        {
+    
+            document.write("<br>" + arg1,arg2,arg3)
+        }
+
+        fundefaultarg();
+
+        document.write("<br>-----writing fun in head section and calling in body----------<br>")
+        
+        </script>
+
+
+<button onclick="sayHi()"> Click Me</button> 
+<script>
+document.write("<br>--------flow controls----------")
+if(1)
+document.write('<br> yes This is true')
+else
+document.write('false')
+
+</script>
+
+<script>
+    document.write("<br>--------loops----------<br>")
+    let countries=['India','USA','Australia'];
+    for(c of countries)
+    {
+        document.write(c)
+        
+    }
+
+    for(s in countries)
+    {
+        document.write("<br>"+countries[s])
+        
+    }
+    
+    for(s in countries)
+    {
+        document.write("<br>"+s)   //this will gives indexes
+        document.write(`Country ${++s} ==> ${countries[s]}`+"<br>") 
+        
+    }
+    </script>
+
+
+
+
+</body>
+</html>

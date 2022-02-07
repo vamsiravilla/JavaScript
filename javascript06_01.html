@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+    
+
+
+<script>
+    var num1 = 10;
+    var num2 = 20;
+    function add(val){
+        if (val=='add'){
+        num3 = num1+num2
+        document.getElementById('demo').innerHTML=num3;
+        }
+        else if(val=='sub') {
+            num4 = num1-num2
+            document.getElementById('demo').innerHTML=num4;
+        }
+    }
+</script>
+
+<input type="button"  value = 'add' onclick="add('add')">
+
+<input type="button"  value = 'sub' onclick="add('sub')">
+<div id="demo"></div>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html> 

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnMouseOver</title>
+    <script>
+    function countchar(val)
+    {
+    var data = document.getElementById('data').value;
+        if(data.length<=30)
+        {
+            document.getElementById('count').innerHTML=data.length;
+        }
+        else{
+            document.getElementById('count').innerHTML='Overflow';
+        }
+    }
+
+    function keypress(val)
+    {
+    var data = document.getElementById('data1').value;
+        if(data1.length<=30)
+        {
+            document.getElementById('count1').innerHTML=data1.length;
+        }
+        else{
+            document.getElementById('count1').innerHTML='Overflow';
+        }
+    }
+ 
+</script>
+</head>
+<body>
+    <textarea id='data' rows="10" cols="30" onkeyup="countchar()"></textarea><span id='count'></span>
+
+    <textarea id='data1' rows="10" cols="30" onkeypress="keypress()"></textarea><span id='count1'></span>
+
+    <!-- onselect -->
+    <!-- onload -->
+
+    <!-- switch case -->
+    <!-- window.open() --> 
+    <!-- window.print() -->
+
+  
+
+</body>
+</html>

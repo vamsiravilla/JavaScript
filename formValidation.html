@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REVISION</title>
+    <style>
+    #pspa,#cmessage{
+        color:red;
+        }
+    </style>
+</head>
+<body>
+    <!-- <script>
+        numbers=[1,2,3,4]
+        numbers.forEach((number, index) => {
+        document.write('Index: ' + index + ' Value: ' + number);});
+    </script> -->
+
+    <!-- 18-01-2022 -->
+
+    <!-- <div id="prasad"></div>
+    <script>
+    const obj = JSON.parse('["name","Prasad",]');
+    document.getElementById("prasad").innerHTML = obj[1];
+    const dob = JSON.parse('{"dob":12/12/2020}');
+    document.getElementById("prasad").innerHTML = dob.dob;
+    </script> -->
+    
+    <!--Program-2 18-01-2022 -->
+
+    <!-- <button onclick="download_csv_data()">Download CSV</button>
+
+    <script>
+        const csvdata =[
+        ['Prasad','Python'],
+        ['SK','Django'],
+        ['Srinitha','DS'],
+        ['SaiMani','DataScience'],
+        ];
+
+        function download_csv_data() {
+            var csv_heading = 'Name,Technology<br>';
+
+            csvdata.forEach(function(row)
+            {
+                csv_heading +=row.join(',');
+                csv_heading+="<br>";
+            });
+            document.write(csv_heading+'<br>');
+            var hiddenEl = document.createElement('a');
+            hiddenEl.href='data:text/html;charset=utf',+encodeURI(csvdata);
+            hiddenEl.target = '_blank';
+            //provide name for csv file
+            hiddenEl.download='Emp_details.csv';
+            hiddenEl.click();
+        }
+
+    </script> -->
+    <form action="" onsubmit="return validFun()">
+
+    Password: <input type="password" id='psw' placeholder="Enter password"><br>
+    <span id="pspa"></span><br>
+    Confirm Password: <input type="password" id='cpsw' placeholder="Confirm password"><br>
+    <span id="cmessage"></span><br>
+    <button type="submit">Submit</button>
+    <button type="Reset" value='reset'>Reset</button>
+    </form>
+<script>
+    function validFun() {
+        var passwd = document.getElementById("psw").value
+        var cpasswd = document.getElementById("cpsw").value
+        if (passwd =="")
+        {
+            document.getElementById("pspa").innerHTML = '*Please Must be Enter'
+            return false
+        }
+        if (passwd.length<8)
+        {
+            document.getElementById("pspa").innerHTML = '*Need More chars'
+            return false
+        }
+        if (passwd!==cpasswd){
+            document.getElementById("cmessage").innerHTML = '*Passwod Must be Same'
+            return false
+        }
+
+        }
+</script>
+    
+</body>
+</html>

@@ -1,0 +1,29 @@
+<html>
+<head>
+</head>
+<body>
+
+<script>
+
+var csvdata = [['bhargav','kummari'],['bhargav','kummari'],['bhargav','kummari'],]
+
+function download_csv_data()
+{
+	
+var csv_heading = 'name,technology <br>'
+
+csvdata.forEach(function(row)
+{
+	csv_heading+=row.join(',');
+	csv_heading +="<br>";
+
+}
+);
+
+document.write(csv_heading)<br>
+}
+
+</script>
+</body>
+<button onClick='download_csv_data()'>submit</button>
+</html>

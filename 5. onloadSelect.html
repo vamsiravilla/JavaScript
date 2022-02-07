@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onload Select Box</title>
+</head>
+<body>
+    <script>
+        function selectfun()
+        {
+            var values = new Array('python', 'java','django')
+            document.write('<select> <option>Select Technology </option></select>');
+        
+            for (i=0; i<=values.length; i++)
+            {   
+                
+                document.write('option>'+values[i]+'</option>');
+            }
+
+        }
+
+        // array 'concate' to concate two arrays
+        // indexOf to know an index of element
+        // join
+        // valueOf()
+        // toString()
+        // reverse
+        // sort()
+
+    
+
+    </script>
+
+</body>
+<body onload="selectfun()">
+    
+</body>
+</html>

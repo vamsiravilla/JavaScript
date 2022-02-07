@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script>
+    // function hai()
+    // {
+    //     var xyz = Number(document.getElementById("d1").value);
+    //     document.getElementById("divid").innerHTML=xyz;
+    // }
+    var flag=true;
+    function formfun()
+    {   
+        var xyz = '<form action="comment"> Enter Fname: <input type="text" id="t1"/><br>Enter Sname: <input type="text" id="t2"/><br> <input type="submit" value="submit"></form>';
+        if (flag){
+        document.getElementById("divid").innerHTML=xyz;
+        flag=false;
+        }
+        else{
+            document.getElementById("divid").innerHTML='';
+        flag=true;
+        }
+    }
+</script>
+</head>
+<body>
+
+
+    
+    <button onclick='formfun()''>Click here</button>
+    <div id='divid'></div>
+   
+</body>
+</html>

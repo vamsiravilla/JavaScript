@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+    <script>
+        var countries = ['India', 'Pakistan', 'USA','Russia']
+        for(i=0; i<countries.length; i++)
+        {
+            document.write(countries[i],"<br>");
+        }
+
+        for(i of countries)
+        {
+            document.write(i,"<br>");
+
+        }
+
+        for(i in countries)
+        {
+            document.write(i, countries[i],"<br>");
+
+        }
+
+        const arr_one = [10,20,30,40,50];
+        arr_one[0] =100;
+        arr_one[4] = 500;
+        console.log(arr_one);
+        //arr_one = []
+
+        arr_one.push(50);
+        console.log(arr_one);
+
+        arr_one.pop();
+        console.log(arr_one);
+
+        let arr_two = [10,20,30,40]
+        const res = arr_two.slice(2);
+        console.log(res);
+
+        const fruits = ['Banana', 'Orange','Apple','Mango'];
+        document.write(fruits +'<br>');
+        fruits.splice(2, 'Lemon', 'Kiwi');
+        document.write(fruits);
+
+
+
+    </script>
+    
+</body>
+</html>
+
+<!-- Array Predefined methods
+push()
+pop()
+slice()
+shift()
+index() -->

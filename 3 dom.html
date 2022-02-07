@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Document Object Model</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="">
+<style>
+</style>
+<script>
+    // function showMe()
+    // {   
+    //     // alert("OK BOSS")
+
+    //     let userName = document.getElementById('uname').value;
+    //     let Age = Number(f.age.value);
+    //     document.write(userName);
+    //     document.write(Age);
+    // }   
+
+    // function multable()
+    // {
+    //     var Num = Number(document.getElementById('number').value);
+    //     for(i=1; i<=10; i++)
+    //     {
+    //         document.write("<br>"+Num + " * "+i+" = "+`${Num*i}`)
+    //     }
+    // }
+
+    // function numberAdd()
+    // {
+    //     var fno = document.getElementById('inputone').value;
+    //     var sno = document.getElementById('inputtwo').value;
+    //     var res = parseInt(fno) + parseInt(sno);      
+    //     document.getElementById('inputthree').value=res;     
+    // }
+
+    
+    function calc(arg)
+    {
+        if (arg =='add')
+        {
+        var fno = document.getElementById('inputone').value;
+        var sno = document.getElementById('inputtwo').value;
+        var addresult = parseInt(fno)+parseInt(sno)
+        document.getElementById('inputthree').value=addresult; 
+        }
+        if (arg =='sub')
+        {
+        var fno = document.getElementById('inputone').value;
+        var sno = document.getElementById('inputtwo').value;
+        var subresult = parseInt(fno)-parseInt(sno)
+        document.getElementById('inputthree').value=subresult; 
+        }
+        if (arg =='mul')
+        {
+        var fno = document.getElementById('inputone').value;
+        var sno = document.getElementById('inputtwo').value;
+        var mulresult = parseInt(fno)*parseInt(sno)
+        document.getElementById('inputthree').value=mulresult;
+        }
+        if (arg =='div')
+        {
+        var fno = document.getElementById('inputone').value;
+        var sno = document.getElementById('inputtwo').value;
+        var divresult = parseInt(fno)/parseInt(sno)
+        document.getElementById('inputthree').value=divresult;
+        }
+
+      
+    }
+
+
+</script>
+<body>
+    <form name='f'>
+        <!-- <input  type='text' id='uname'  placeholder="Enter Name "/>
+        <input  type='text' name='age' placeholder="Enter Age "/>
+        <button onclick='showMe()'>Click Me</button> -->
+<!-- 
+        <input type="text" id='number' placeholder='Enter Table Number'/>
+        <button onclick='multable()'>Show Table</button> -->
+    </form>
+
+    <input type="text" id='inputone' placeholder='Enter 1st Number'/>
+    <input type="text" id='inputtwo' placeholder='Enter 2nd Number'/>
+    <input type="text" id='inputthree' placeholder='Result'/>
+    <button onclick='calc("add")'>Add</button>
+    <button onclick='calc("sub")'>Sub</button>
+    <button onclick='calc("mul")'>Mul</button>
+    <button onclick='calc("div")'>Div</button>
+
+</body>
+</html>

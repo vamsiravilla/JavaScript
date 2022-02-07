@@ -1,0 +1,78 @@
+<script type="text/javascript">
+function ValidateForm(eid,errid)
+{
+var x=document.getElementById(eid).value;
+if(x=="")
+{
+document.getElementById(errid).innerHTML="pls fill this field";
+}
+else
+{
+document.getElementById(errid).innerHTML="";
+}
+}
+
+function ValidateForm1(event,err)
+{
+if(!((event.which>=65 && event.which<=90) || (event.which>=97 && event.which<=122) || event.which==0 || event.which==8))
+{
+document.getElementById(err).innerHTML="invalid name format";
+return false;
+}
+}
+
+function chkeid()
+{
+var e=document.getElementById("e").value;
+var atpos=e.indexOf("@");
+var dotpos=e.lastIndexOf(".");
+if(atpos<4 || dotpos<atpos+3)
+{
+document.getElementById("error2").innerHTML="invalid email";
+}
+else
+{
+document.getElementById("error2").innerHTML="";
+}
+
+}
+</script>
+</head>
+<body>
+<h3 align="center">Validation on Registration Page</h5>
+<form align = 'center'>
+        <div class="col"><input type="text" id="fn" placeholder='Your First Name' required onkeypress="return ValidateForm1(event,'error')" onblur="ValidateForm('fn','error')"/></div>
+        <div class="col" id="error" style="color:red"></div>
+
+
+
+		<div class="col"><input type="text" id="ln" placeholder='Your last Name' required onblur="ValidateForm('ln','error1')"/></div>
+		<div class="col" id="error1" style="color:red"></div>
+
+
+		
+		<div class="col">
+		<input type="text" id="e" placeholder='Your Email id' required onblur="chkeid()"/></div>
+		<div class="col" id="error2" style="color:red"></div>
+
+		
+		<div class="col"><input type="password" placeholder='Your Passord' required id="p"  onblur="ValidateForm('p','error3')"/></div>
+		<div class="col" id="error3" style="color:red"></div>
+	
+	
+		
+		<div class="col"><input type="password"  placeholder='Conform Pass' required id="cp"  onblur="ValidateForm('cp','error4')"/></div>
+		<div class="col" style="color:red" id="error4"></div>
+	
+
+		
+		<textarea id="adds" placeholder='Your Address' required onblur="ValidateForm('adds','error5')"></textarea></div>
+		<div class="col" style="color:red" id="error5"></div><br>
+
+		  <input type="submit" value="Submit">
+
+		
+
+</form>
+</body>
+</html>

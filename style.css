@@ -1,0 +1,17 @@
+h1{
+	color: white;
+	font-family: verdana;
+	text-align: center;
+	background-color: black;
+	background: blue;
+}
+h2:hover{
+	color:tomato;
+	font-family: verdana;
+}
+.Apple{
+	color: tomato;
+}
+img{
+	border: 10px solid black;
+}

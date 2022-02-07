@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On Change Event</title>
+<script>
+    function disp(val)
+    {
+        window.location='http://www.'+val+'.com';
+    }
+</script>
+</head>
+<body>
+
+    <select onchange="disp(this.value)">
+        <option>gmail</option>
+        <option>meta</option>
+        <option>google</option>
+        <option>mozilla</option> 
+    </select> 
+</body>
+</html>
